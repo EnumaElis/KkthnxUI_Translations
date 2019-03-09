@@ -126,6 +126,11 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Двигать окна Blizzard",
 		},
 
+		["TaintLog"] = {
+			["Name"] = "Log Taints",
+			["Desc"] = "Send ADDON_ACTION_BLOCKED errors to the Lua Error frame. These errors are less important in most cases and will not effect your game performance. Also, a lot of these errors cannot be fixed. Please only report these errors if you notice a Defect in gameplay.",
+		},
+
 		["ReplaceBlizzardFonts"] = {
 			["Name"] = "Заменить стандартные шрифты",
 			["Desc"] = "Заменить некоторые шрифты Blizzard на шрифт KkthnxUI",
@@ -241,6 +246,16 @@ KkthnxUIConfig["ruRU"] = {
 
 		["Enable"] = {
 			["Name"] = "Включить сумки",
+		},
+
+		["BagBar"] = {
+			["Name"] = "Bag Bar",
+			["Desc"] = "Enable/Disable the Bag-Bar.",
+		},
+
+		["BagBarMouseover"] = {
+			["Name"] = "Bag Bar Mouseover",
+			["Desc"] = "The Bag Bar is not shown unless you mouse over the Bag Bar.",
 		},
 
 		["Font"] = {
@@ -388,6 +403,11 @@ KkthnxUIConfig["ruRU"] = {
 		["StanceMouseover"] = {
 			["Name"] = "Скрывать панель стоек",
 			["Desc"] = "Показывать панель стоек при наведении мышки. Работает только при горизонтальной панели стоек",
+		},
+
+		["HideHighlight"] = {
+			["Name"] = "Proc Highlight",
+			["Desc"] = "Hide proc highlight",
 		},
 
 		["Hotkey"] = {
@@ -664,6 +684,16 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Сбитие каста",
 			["Desc"] = "Написать в нужный канал о сбитии каста",
 		},
+
+		["Dispel"] = {
+			["Name"] = "Dispel",
+			["Desc"] = "Announce in desired channel when you dispel",
+		},
+
+		["Steal"] = {
+			["Name"] = "Steal",
+			["Desc"] = "Announce in desired channel when you steal",
+		},		
 	},
 
 	-- Automation Local
