@@ -125,7 +125,7 @@ KkthnxUIConfig["ruRU"] = {
 		["MoveBlizzardFrames"] = {
 			["Name"] = "Двигать окна Blizzard",
 		},
-
+		-- РУС Перевести
 		["TaintLog"] = {
 			["Name"] = "Log Taints",
 			["Desc"] = "Send ADDON_ACTION_BLOCKED errors to the Lua Error frame. These errors are less important in most cases and will not effect your game performance. Also, a lot of these errors cannot be fixed. Please only report these errors if you notice a Defect in gameplay.",
@@ -249,13 +249,13 @@ KkthnxUIConfig["ruRU"] = {
 		},
 
 		["BagBar"] = {
-			["Name"] = "Bag Bar",
-			["Desc"] = "Enable/Disable the Bag-Bar.",
+			["Name"] = "Панель сумок",
+			["Desc"] = "Включить панель сумок",
 		},
 
 		["BagBarMouseover"] = {
-			["Name"] = "Bag Bar Mouseover",
-			["Desc"] = "The Bag Bar is not shown unless you mouse over the Bag Bar.",
+			["Name"] = "Скрывать панель сумок",
+			["Desc"] = "Панель сумок будет скрыта, пока вы не наведете на неё мышкой",
 		},
 
 		["Font"] = {
@@ -404,7 +404,7 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Скрывать панель стоек",
 			["Desc"] = "Показывать панель стоек при наведении мышки. Работает только при горизонтальной панели стоек",
 		},
-
+		-- РУС Перевести
 		["HideHighlight"] = {
 			["Name"] = "Proc Highlight",
 			["Desc"] = "Hide proc highlight",
@@ -677,26 +677,27 @@ KkthnxUIConfig["ruRU"] = {
 
 		["SaySapped"] = {
 			["Name"] = "Сказать об ошеломлении",
-			["Desc"] = "Оповести в канале /сказать о том что вас ошеломили",
+			["Desc"] = "Оповестить в канале '/сказать' о том что вас ошеломили",
 		},
 
 		["Interrupt"] = {
 			["Name"] = "Сбитие каста",
-			["Desc"] = "Написать в нужный канал о сбитии каста",
+			["Desc"] = "Написать в выбранный канал о сбитии каста",
 		},
 
 		["Dispel"] = {
-			["Name"] = "Dispel",
-			["Desc"] = "Announce in desired channel when you dispel",
+			["Name"] = "Рассеивание",
+			["Desc"] = "Написать в выбранный канал о рассеивании заклинания",
 		},
 
 		["Steal"] = {
-			["Name"] = "Steal",
-			["Desc"] = "Announce in desired channel when you steal",
+			["Name"] = "Кража",
+			["Desc"] = "Написать в выбранный канал о то что вы совершили кражу",
 		},		
 	},
 
 	-- Automation Local
+	-- РУС Перевести
 	["Automation"] = {
 		["BlockMovies"] = {
 			["Name"] = "Block Movies",
@@ -828,9 +829,9 @@ KkthnxUIConfig["ruRU"] = {
 		["Size"] = {
 			["Name"] = "Размер иконки аур",
 		},
-		-- РУС Перевести
+
 		["VerticalSpacing"] = {
-			["Name"] = "Vertical Spacing",
+			["Name"] = "Вертикальные промежутки",
 		},
 
 		["WrapAfter"] = {
@@ -1120,10 +1121,10 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Спам на Полях боя",
 			["Desc"] = "Во время BG убирает разговорный спам от Боссов",
 		},
-		-- РУС Перевести
+
 		["NoTalkingHead"] = {
-			["Name"] = "Hide TalkingHead",
-			["Desc"] = "Removes the message dialog that appears for quests/dungeons",
+			["Name"] = "Скрыть Говорящую Голову",
+			["Desc"] = "Скрывает диалоговое окно которое появляется во время задания и в подземельях",
 		},
 		-- РУС Перевести
 		["InspectInfo"] = {
@@ -1150,10 +1151,10 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Improved Stats",
 			["Desc"] = "Provides an updated and logical display of the character stats",
 		},
-		-- РУС Перевести
+
 		["KillingBlow"] = {
-			["Name"] = "Killing Blow",
-			["Desc"] = "Display a message about your killing blow",
+			["Name"] = "Смертельный удар",
+			["Desc"] = "Показывает сообщение, когда вы нанесли последний смертельный удар",
 		},
 		-- РУС Перевести
 		["PvPEmote"] = {
@@ -1232,9 +1233,9 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Ресурсы класса",
 			["Desc"] = "Показывать ресурсы класса на рамке игрока (Комбо-очки, Руны...)",
 		},
-		-- РУС перевести
+
 		["CastbarLatency"] = {
-			["Name"] = "Castbar Latency",
+			["Name"] = "Задержка полосы заклинаний",
 		},
 
 		["MouseoverHighlight"] = {
@@ -1265,15 +1266,15 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Только ваши дебаффы",
 			["Desc"] = "Показывает на рамке Цели только ваши дебаффы",
 		},
-		-- РУС перевести
+
 		["PlayerBuffs"] = {
-			["Name"] = "Player Buffs",
-			["Desc"] = "Display your buffs under the player frame",
+			["Name"] = "Бафы игрока",
+			["Desc"] = "Показывает ваши баффы под рамкой",
 		},
-		-- РУС перевести
+
 		["PortraitTimers"] = {
-			["Name"] = "Portrait Timers",
-			["Desc"] = "Displays important PvP buffs/debuffs with timers on your Portraits",
+			["Name"] = "Таймеры на портрете",
+			["Desc"] = "Показывает важные PvP баффы/дебаффы с таймерами на ваших портретах",
 		},
 
 		["Castbars"] = {
@@ -1303,59 +1304,59 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Reaction Castbars",
 			["Desc"] = "Color castbars by the reaction type of non-player units.",
 		},
-		-- РУС перевести
+
 		["DebuffsOnTop"] = {
-			["Name"] = "Debuffs On Top",
-			["Desc"] = "Display debuffs ontop and buffs on the bottom (affects only Target Frame)",
+			["Name"] = "Дебаффы сверху",
+			["Desc"] = "Показывать дебаффы сверху, а баффы снизу (работает только с рамкой Цели)",
 		},
-		-- РУС перевести
+
 		["Enable"] = {
-			["Name"] = "Enable Unitframes",
+			["Name"] = "Включить рамки персонажей",
 		},
-		-- РУС перевести
+
 		["Font"] = {
 			["Name"] = "Шрифт",
 		},
-		-- РУС перевести
+
 		["GlobalCooldown"] = {
-			["Name"] = "Global Cooldown",
-			["Desc"] = "Display a global CD on the unit frames healthbar (only shows for player frame)",
+			["Name"] = "Глобальный кулдаун",
+			["Desc"] = "Показывать глобальный кулдаун на панели ХП игрока",
 		},
 
 		["TargetHighlight"] = {
-			["Name"] = "Target Highlight",
-			["Desc"] = "Highlight your current selected party target",
+			["Name"] = "Подсвечивать цель",
+			["Desc"] = "Подсвечивает выделенную цель в группе",
 		},
-
+		-- РУС Перевести
 		["PowerPredictionBar"] = {
 			["Name"] = "Power Prediction Bar",
 			["Desc"] = "Display a bar at which determines how much a spell will cost of power?",
 		},
-
+		-- РУС Перевести
 		["Smooth"] = {
 			["Name"] = "Smooth Bars",
 			["Desc"] = "Bars will transition smoothly."..PerformanceIncrease,
 		},
-
+		-- РУС Перевести
 		["SmoothSpeed"] = {
 			["Name"] = "Smooth Speed",
 			["Desc"] = "How fast the bars will transition smoothly.",
 		},
 
 		["Texture"] = {
-			["Name"] = "Statusbar Texture",
+			["Name"] = "Текстура панелей",
 		},
 
 		["ThreatPercent"] = {
-			["Name"] = "Threat Percent",
-			["Desc"] = "Enable threat percent on the target/focus frames",
+			["Name"] = "Процент угрозы",
+			["Desc"] = "Включает отображение процента угрозы на рамках Цели/Фокуса",
 		},
 
 		["PortraitStyle"] = {
-			["Name"] = "Portrait Style",
-			["Desc"] = "2D, Class Icons, Blizzlike and more |n|n3D Portraits could degrade performance",
+			["Name"] = "Стиль портретов",
+			["Desc"] = "2D, Иконки класса, как у Blizzard и т.д. |n|n3D портреты могу снизить производительность",
 		},
-
+		-- РУС Перевести
 		["NumberPrefixStyle"] = {
 			["Name"] = "Unit Prefix Style",
 			["Desc"] = "The unit prefixes you want to use when values are shortened in KkthnxUI. This is mostly used on UnitFrames.",
@@ -1372,7 +1373,7 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Иконка заклинаний",
 			["Desc"] = "Показывает иконку заклинания рядом с полосой",
 		},
-
+		-- РУС Перевести
 		["DecimalLength"] = {
 			["Name"] = "Decimal Length",
 			["Desc"] = "Controls the amount of decimals used in values displayed on elements like NamePlates and UnitFrames.",
@@ -1385,12 +1386,12 @@ KkthnxUIConfig["ruRU"] = {
 		["Font"] = {
 			["Name"] = "Шрифт",
 		},
-
+		-- РУС Перевести
 		["Smooth"] = {
 			["Name"] = "Smooth Bars",
 			["Desc"] = "Bars will transition smoothly."..PerformanceIncrease,
 		},
-
+		-- РУС Перевести
 		["SmoothSpeed"] = {
 			["Name"] = "Smooth Speed",
 			["Desc"] = "How fast the bars will transition smoothly.",
@@ -1399,7 +1400,7 @@ KkthnxUIConfig["ruRU"] = {
 		["Texture"] = {
 			["Name"] = "Текстура панелей",
 		},
-
+		-- РУС Перевести
 		["NumberPrefixStyle"] = {
 			["Name"] = "Unit Prefix Style",
 			["Desc"] = "The unit prefixes you want to use when values are shortened in KkthnxUI. This is mostly used on UnitFrames.",
@@ -1409,62 +1410,62 @@ KkthnxUIConfig["ruRU"] = {
 	-- Arena Local
 	["Boss"] = {
 		["Castbars"] = {
-			["Name"] = "Enable Castbars",
+			["Name"] = "Включить полосу заклинаний",
 		},
 
 		["CastbarIcon"] = {
-			["Name"] = "Castbar Icon",
-			["Desc"] = "Create an icon beside the cast bar",
+			["Name"] = "Иконки заклинаний",
+			["Desc"] = "Показывать иконки на полосе заклинаний",
 		},
 
 		["CastbarHeight"] = {
-			["Name"] = "Castbar Height",
+			["Name"] = "Высота полосы",
 		},
 
 		["CastbarWidth"] = {
-			["Name"] = "Castbar Width",
+			["Name"] = "Ширина полосы",
 		},
-
+		-- РУС Перевести
 		["DecimalLength"] = {
 			["Name"] = "Decimal Length",
 			["Desc"] = "Controls the amount of decimals used in values displayed on elements like NamePlates and UnitFrames.",
 		},
 
 		["Enable"] = {
-			["Name"] = "Enable Boss Frames",
+			["Name"] = "Включить рамки Боссов",
 		},
 
 		["Font"] = {
-			["Name"] = "Font",
+			["Name"] = "Шрифт",
 		},
-
+		-- РУС Перевести
 		["Smooth"] = {
 			["Name"] = "Smooth Bars",
 			["Desc"] = "Bars will transition smoothly."..PerformanceIncrease,
 		},
-
+		-- РУС Перевести
 		["SmoothSpeed"] = {
 			["Name"] = "Smooth Speed",
 			["Desc"] = "How fast the bars will transition smoothly.",
 		},
 
 		["Texture"] = {
-			["Name"] = "Statusbar Texture",
+			["Name"] = "Текстура панелей",
 		},
 
 		["ThreatPercent"] = {
-			["Name"] = "Threat Percent",
-			["Desc"] = "Enable threat percent on the boss frame",
+			["Name"] = "Процент угрозы",
+			["Desc"] = "Включает отображение процента угрозы на рамке Боссов",
 		},
-
+		-- РУС Перевести
 		["NumberPrefixStyle"] = {
 			["Name"] = "Unit Prefix Style",
 			["Desc"] = "The unit prefixes you want to use when values are shortened in KkthnxUI. This is mostly used on UnitFrames.",
 		},
 
 		["PortraitStyle"] = {
-			["Name"] = "Portrait Style",
-			["Desc"] = "2D, Class Icons, Blizzlike and more |n|n3D Portraits could degrade performance",
+			["Name"] = "Стиль портретов",
+			["Desc"] = "2D, Иконки класса, как у Blizzard и т.д. |n|n3D портреты могу снизить производительность",
 		},
 	},
 
@@ -1473,44 +1474,44 @@ KkthnxUIConfig["ruRU"] = {
 		["Castbars"] = {
 			["Name"] = "Включить полосы заклинаний",
 		},
-		-- РУС перевести
+
 		["CastbarIcon"] = {
 			["Name"] = "Иконка заклинаний",
-			["Desc"] = "Create an icon beside the cast bar",
+			["Desc"] = "Показывает иконки на полосе заклинаний",
 		},
 
 		["Enable"] = {
 			["Name"] = "Включить окно группы",
 		},
-		-- РУС перевести
+
 		["MouseoverHighlight"] = {
-			["Name"] = "Mouseover Highlight",
-			["Desc"] = "Highlight a units Health Bar when you are moused over them. (Only works for Target and Party right now!)",
+			["Name"] = "Подсветка мышкой",
+			["Desc"] = "Подсвечивает полосу ХП при наведении мыши (Работает только на Цели и Группе на данный момент!)",
 		},
 		-- РУС перевести
 		["DecimalLength"] = {
 			["Name"] = "Decimal Length",
 			["Desc"] = "Controls the amount of decimals used in values displayed on elements like NamePlates and UnitFrames.",
 		},
-		-- РУС перевести
+
 		["PartyAsRaid"] = {
-			["Name"] = "Party as Raid Frames",
-			["Desc"] = "Check this if you want to use the Raidframes instead of the Partyframes.",
+			["Name"] = "Рамки рейда вместо группы",
+			["Desc"] = "Включайте, если хотите использовать рамки рейда вместо рамок группы",
 		},
-		-- РУС перевести
+
 		["PortraitTimers"] = {
-			["Name"] = "Portrait Timers",
-			["Desc"] = "Displays important PvP buffs/debuffs with timers on your Portraits",
+			["Name"] = "Таймеры на портрете",
+			["Desc"] = "Показывает важные PvP баффы/дебаффы с таймерами на ваших портретах",
 		},
 
 		["ShowBuffs"] = {
 			["Name"] = "Показывать баффы",
 			["Desc"] = "Отображать баффы на окнах группы",
 		},
-		-- РУС перевести
+
 		["ShowPlayer"] = {
-			["Name"] = "Show Player In Party",
-			["Desc"] = "Display your self in the party frames or not. Hell I don't care",
+			["Name"] = "Показывать вас в группе",
+			["Desc"] = "Показывать вас в группе или нет",
 		},
 
 		["Font"] = {
@@ -1528,8 +1529,8 @@ KkthnxUIConfig["ruRU"] = {
 		},
 
 		["TargetHighlight"] = {
-			["Name"] = "Target Highlight",
-			["Desc"] = "Highlight your current selected party target",
+			["Name"] = "Подсвечивать цель",
+			["Desc"] = "Подсвечивает выделенную цель в группе",
 		},
 
 		["Texture"] = {
@@ -1537,10 +1538,10 @@ KkthnxUIConfig["ruRU"] = {
 		},
 
 		["PortraitStyle"] = {
-			["Name"] = "Portrait Style",
-			["Desc"] = "2D, Class Icons, Blizzlike and more |n|n3D Portraits could degrade performance",
+			["Name"] = "Стиль портретов",
+			["Desc"] = "2D, Иконки класса, как у Blizzard и т.д. |n|n3D портреты могу снизить производительность",
 		},
-
+		-- РУС Перевести
 		["NumberPrefixStyle"] = {
 			["Name"] = "Unit Prefix Style",
 			["Desc"] = "The unit prefixes you want to use when values are shortened in KkthnxUI. This is mostly used on UnitFrames.",
@@ -1548,123 +1549,124 @@ KkthnxUIConfig["ruRU"] = {
 	},
 
 	-- Raidframe Local
+	-- РУС Перевести
 	["Raid"] = {
 		["AuraWatch"] = {
 			["Name"] = "Aura Watch Timers",
 			["Desc"] = "Display a timer on debuff icons created by Debuff Watch",
 		},
-
+		-- РУС Перевести
 		["AuraWatchIconSize"] = {
 			["Name"] = "Aura Watch Icon Size",
 		},
-
+		-- РУС Перевести
 		["AuraWatchTexture"] = {
 			["Name"] = "Aura Watch Texture",
 			["Desc"] = "Display a colored texture over your aura watch corner icons. Disable this if you want to see the spell icon instead",
 		},
-
+		-- РУС Перевести
 		["RaidTools"] = {
 			["Name"] = "Raid Utility",
 			["Desc"] = "Enables the 'Raid Control' utility panel",
 		},
-
+		-- РУС Перевести
 		["RaidLayout"] = {
 			["Name"] = "Raid Layout",
 			["Desc"] = "Choose between a Healer or Damage raidframe layout"
 		},
 
 		["TargetHighlight"] = {
-			["Name"] = "Target Highlight",
-			["Desc"] = "Highlight your current selected raid target"
+			["Name"] = "Подсвечивать цель",
+			["Desc"] = "Подсвечивает выделенную цель в рейде",
 		},
 
 		["AuraDebuffIconSize"] = {
-			["Name"] = "Aura Debuff Icon Size",
+			["Name"] = "Размер иконки дебаффов",
 		},
-
+		-- РУС Перевести
 		["DeficitThreshold"] = {
 			["Name"] = "Deficit Threshold",
 			["Desc"] = "Show health deficit when it's more than displayed value",
 		},
-
+		-- РУС Перевести
 		["ColorHealthByValue"] = {
 			["Name"] = "Health By Value",
 			["Desc"] = "Color health by amount remaining.",
 		},
 
 		["Enable"] = {
-			["Name"] = "Enable Raid Frames",
+			["Name"] = "Включить рамки рейда",
 		},
 
 		["Height"] = {
-			["Name"] = "Raid Height",
+			["Name"] = "Высота рейда",
 		},
 
 		["RaidGroups"] = {
-			["Name"] = "Raid Groups",
-			["Desc"] = "Number of groups in the raid",
+			["Name"] = "Групп в рейде",
+			["Desc"] = "Количество групп в рейде",
 		},
 
 		["Width"] = {
-			["Name"] = "Raid Width",
+			["Name"] = "Ширина рейда",
 		},
-
+		-- РУС Перевести
 		["MainTankFrames"] = {
 			["Name"] = "Main Tank Frames",
 			["Desc"] = "You know the people who take all the damage?",
 		},
-
+		-- РУС Перевести
 		["ManabarShow"] = {
-			["Name"] = "Manabar Display",
+			["Name"] = "Полосы ресурсов",
 			["Desc"] = "Off or on. Its a 50% chance here",
 		},
-
+		-- РУС Перевести
 		["MaxUnitPerColumn"] = {
 			["Name"] = "Max Unit Per Column",
 			["Desc"] = "How many frame will display per row/column",
 		},
-
+		-- РУС Перевести
 		["RaidUtility"] = {
 			["Name"] = RAID_CONTROL,
 			["Desc"] = "Enables the custom Raid Control panel.",
 		},
-
+		-- РУС Перевести
 		["ShowMouseoverHighlight"] = {
 			["Name"] = "Show Mouseover Highlight",
 			["Desc"] = "We can see better!",
 		},
-
+		-- РУС Перевести
 		["ShowNotHereTimer"] = {
-			["Name"] = "Not Here Timer (AFK)",
+			["Name"] = "Отошёл (AFK)",
 			["Desc"] = "Display when someone is AFK in your raid",
 		},
 
 		["ShowRolePrefix"] = {
-			["Name"] = "Show Role Prefix",
-			["Desc"] = "Display an H for the healer or T for the tank",
+			["Name"] = "Показывать роль",
+			["Desc"] = "Показывать 'H' для лекарей и 'T' для танков",
 		},
-
+		-- РУС Перевести
 		["Smooth"] = {
 			["Name"] = "Smooth",
 			["Desc"] = "Bars will transition smoothly."..PerformanceIncrease,
 		},
-
+		-- РУС Перевести
 		["SmoothSpeed"] = {
 			["Name"] = "Smooth Speed",
 			["Desc"] = "How fast the bars will transition smoothly.",
 		},
 
 		["Texture"] = {
-			["Name"] = "Statusbar Texture",
+			["Name"] = "Текстура панелей",
 		},
 
 		["Font"] = {
-			["Name"] = "Font",
+			["Name"] = "Шрифт",
 		},
 
 		["GroupBy"] = {
-			["Name"] = "Group By",
-			["Desc"] = "Set the order that the group will sort.",
+			["Name"] = "Группировать по..",
+			["Desc"] = "Порядок сортировки для групп в рейде",
 		},
 	},
 
@@ -1732,7 +1734,7 @@ KkthnxUIConfig["ruRU"] = {
 		["CursorAnchorY"] = {
 			["Name"] = "Возле курсора, отступ на Y",
 		},
-
+		-- РУС Перевести
 		["GuildRanks"] = {
 			["Name"] = "Guild Ranks",
 			["Desc"] = "Display players guild ranks",
@@ -1746,7 +1748,7 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Текст на полосе ХП",
 			["Desc"] = "Показывает текст на полоске ХП в подсказке",
 		},
-
+		-- РУС Перевести
 		["TargetInfo"] = {
 			["Name"] = "Target Info",
 			["Desc"] = "When in a raid group display if anyone in your raid is targeting the current tooltip unit.",
@@ -1756,7 +1758,7 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Иконки",
 			["Desc"] = "Показывает иконки в подсказках",
 		},
-
+		-- РУС Перевести
 		["InspectInfo"] = {
 			["Name"] = "Inspect Info",
 			["Desc"] = "Display a players item level and spec (you need to be holding the shift key down too)",
@@ -1764,9 +1766,9 @@ KkthnxUIConfig["ruRU"] = {
 
 		["NpcID"] = {
 			["Name"] = "NPC IDs",
-			["Desc"] = "Display the npc ID when mousing over a npc tooltip.",
+			["Desc"] = "Показывать ID у NPC при наведении мышкой на них",
 		},
-
+		-- РУС Перевести
 		["ItemQualityBorder"] = {
 			["Name"] = "ItemQuality Border",
 			["Desc"] = "Display item quality colors on the border",
@@ -1776,7 +1778,7 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Звания игроков",
 			["Desc"] = "Показывает звания у игроко",
 		},
-
+		-- РУС Перевести
 		["SpellID"] = {
 			["Name"] = "Spell/Item IDs",
 			["Desc"] = "Display the spell or item ID when mousing over a spell or item tooltip.",
