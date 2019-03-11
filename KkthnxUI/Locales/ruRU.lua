@@ -1,4 +1,4 @@
-local _, _, L = unpack(select(2, ...))
+local K, _, L = unpack(select(2, ...))
 -- Localization for ruRU
 
 if (GetLocale() ~= "ruRU") then
@@ -16,112 +16,117 @@ local LE_ITEM_CLASS_TRADEGOODS = _G.LE_ITEM_CLASS_TRADEGOODS
 
 -- Install Localization
 L["Install"] = {
-	Chat_Set = "Chat Set",
-	CVars_Set = "CVars Set",
-	Step_0 = "Thank you for choosing |cff4488ffKkthnxUI|r!|n|nYou will be guided through the installation process in a few simple steps. At each step you can decide whether or not you want to apply or skip the presented settings.",
-	Step_1 = "The first step applies the essential settings. This is |cffff0000recommended|r for any user unless you want to apply only a specific part of the settings.|n|nClick 'Apply' to apply the settings and 'Next' to continue the install process. If you wish to skip this step just press 'Next'.",
-	Step_2 = "The second step applies the correct chat setup. If you are a new user this step is recommended. If you are an existing user you may want to skip this step.|n|nClick 'Apply' to apply the settings and 'Next' to continue the install process. If you wish to skip this step just press 'Next'.",
-	Step_3 = "Installation is complete. Please click the 'Complete' button to reload the UI. Enjoy KkthnxUI!",
-	Welcome_1 = "Welcome to |cff4488ffKkthnxUI|r v"..K.Version.." "..K.Client..", "..string.format("|cff%02x%02x%02x%s|r", K.Color.r * 255, K.Color.g * 255, K.Color.b * 255, K.Name),
-	Welcome_2 = "Type |cffffbb44/cfg|r to access the in-game configuration menu.",
-	Welcome_3 = "If you are in need of support you can visit our Discord |cffffbb44YUmxqQm|r",
+	Chat_Set = "Настроить чат",
+	CVars_Set = "Настроить CVars",
+	Step_0 = "Благодарим за выбор |cff4488ffKkthnxUI|r!|n|nМы вас проведём через установку за несколько этапов. На каждом этапе вы можете решить принимать или пропустить предлагаемые настройки.",
+	Step_1 = "Первый этап применяет важные настройки. Этот этап |cffff0000рекомендуется|r для всех игроков, кроме тех случаев когда вы хотите применить какие-либо другие специфичные настройки.|n|nНажмите 'Применить' для принятия настроек и затем 'Далее', чтобы продолжить процесс установки. Если вы хотите пропустить этот этап, просто нажмите 'Далее'.",
+	Step_2 = "Второй этап применяет корректные настройки чата. Если вы новый пользователь, то этот этап рекомендуется к применению. Если у вас уже есть собственные настройки чата, вы можете пропустить этот этап.|n|nНажмите 'Применить' для принятия настроек и затем 'Далее', чтобы продолжить процесс установки. Если вы хотите пропустить этот этап, просто нажмите 'Далее'.",
+	Step_3 = "Установка завершена. Нажмите на кнопку 'Завершено' для перезагрузки интерфейса. Пользуйтесь KkthnxUI в удовольствие!",
+	Welcome_1 = "Добро пожаловать в |cff4488ffKkthnxUI|r v"..K.Version.." "..K.Client..", "..string.format("|cff%02x%02x%02x%s|r", K.Color.r * 255, K.Color.g * 255, K.Color.b * 255, K.Name),
+	Welcome_2 = "Напиши |cffffbb44/cfg|r чтобы открыть окно с настройками.",
+	Welcome_3 = "Если вам нужна поддержка, заходите в Discord |cffffbb44YUmxqQm|r",
 
-	StepTitle_0 = "WELCOME",
-	StepTitle_1 = "CVARS",
-	StepTitle_2 = "CHAT",
-	StepTitle_3 = "COMPLETE",
+	StepTitle_0 = "ПРИВЕТ",
+	StepTitle_1 = "ПЕРЕМЕННЫЕ (CVARS)",
+	StepTitle_2 = "ЧАТ",
+	StepTitle_3 = "ЗАВЕРШЕНО",
 }
 
 -- StaticPopups Localization
 L["StaticPopups"] = {
+	-- РУС Перевести
 	BoostUI = "Accepting this will adjust your GFX(Graphics) settings to 'try' to improve your FPS.",
-	Cancel = "You have canceled this dialog.",
-	Changes_Reload = "One or more of the changes you have made require a ReloadUI.",
-	Config_Reload = "One or more of the changes you have made require a ReloadUI.",
-	Delete_Grays = "Delete gray items?",
-	Disband_Group = "Are you sure you want to disband the group?",
-	Fix_Actionbars = "There seems to be an issue with your actionbars. Would you like to attempt to fix the issue?",
-	KkthnxUI_Update = "KkthnxUI is out of date. You can download the newest version from Curse!",
-	Reset_UI = "Are you sure you want to reset all the settings on this profile?",
-	Resolution_Changed = "We detected a resolution change on your World of Warcraft client. We HIGHLY RECOMMEND restarting your game. Do you want to proceed?",
-	Restart_GFX = "One or more of the changes you have made require a restart of the graphics engine.",
-	Set_UI_Scale = "Automatically scale the User Interface based on your screen resolution?",
-	Warning_Blizzard_AddOns = "It appears one of your AddOns have disabled the AddOn Blizzard_CompactRaidFrames. This can cause errors and other issues. The AddOn will now be re-enabled.",
-	WoWHeadLink = "Wowhead Link",
+	Cancel = "Вы отменили этот диалог.",
+	Changes_Reload = "Для того чтобы изменения вступили в силу, необходимо перезагрузить интерфейс (UI).",
+	Config_Reload = "Для того чтобы изменения вступили в силу, необходимо перезагрузить интерфейс (UI).",
+	Delete_Grays = "Удалить серые предметы?",
+	Disband_Group = "Вы уверены что хотите распустить эту группу?",
+	Fix_Actionbars = "Кажется есть проблема с отображением ваших панелей. Хотите попытаться исправить эту проблему?",
+	KkthnxUI_Update = "Версия KkthnxUI устаревшая. Вы можете загрузить более новую версию на Curse!",
+	Reset_UI = "Вы уверены, что хотите сбросить все настройки на этом профиле?",
+	Resolution_Changed = "Мы обнаружили, что поменялось разрешение экрана. Мы ОЧЕНЬ РЕКОМЕНДУЕМ перезагрузить игру. Приступить к перезагрузке?",
+	Restart_GFX = "Для того чтобы изменения вступили в силу, необходимо перезагрузить игру.",
+	Set_UI_Scale = "Автоматически масштабировать интерфейс, основываясь на вашем разрешении экрана?",
+	Warning_Blizzard_AddOns = "Похоже что одно из ваших дополнений отключило дополнение Blizzard_CompactRaidFrames. Это может приводить к ошибкам и прочим проблемам. Дополнение будет переподключено.",
+	WoWHeadLink = "Ссылка на Wowhead",
 }
 
 -- Commands Localization
 L["Commands"] = {
-	AbandonQuests = "All quests that are NOT marked complete, have been abandoned!",
-	BlizzardAddOnsOn = "The following addon was re-enabled: ",
-	CheckQuestInfo = "\nEnter questID found in Wowhead URL\nhttp://wowhead.com/quest=ID\nExample: /checkquest 12045\n",
-	CheckQuestComplete = " has been completed!",
-	CheckQuestNotComplete = " has not been completed!",
-	ConfigNotFound = "KkthnxUI config not found!",
+	AbandonQuests = "Все задания, не помеченные как 'Выполненные', будут удалены!",
+	BlizzardAddOnsOn = "Следующие дополнения были заново включены: ",
+	CheckQuestInfo = "\nВведите questID, который можно найти на Wowhead URL\nhttp://wowhead.com/quest=ID\nПример: /checkquest 12045\n",
+	CheckQuestComplete = " был завершён!",
+	CheckQuestNotComplete = " не был завершён!",
+	ConfigNotFound = "Конфигурационный файл KkthnxUI не найден!",
+	-- РУС Перевести
 	ConfigPerAccount = "Your settings are currently set across all your characters! You can't use this command!",
-	FixParty = "\n|cff4488ff".."If you are still stuck in party, try the following".."|r\n\n|cff00ff001.|r Invite someone to a group and have them accept.\n|cff00ff002.|r Convert your group to a raid.\n|cff00ff003.|r Use the previous leave party command again.\n|cff00ff004.|r Invite your friend back to a group.\n\n",
+	FixParty = "\n|cff4488ff".."Если вы застряли в группе, попробуйте следующее:".."|r\n\n|cff00ff001.|r Пригласите кого-нибудь в группу.\n|cff00ff002.|r Переделайте группу в рейд.\n|cff00ff003.|r Используйте ту же команду что и ранее чтобы покинуть группу.\n|cff00ff004.|r Снова пригласите вашего друга в группу.\n\n",
 	LuaErrorInfo = "|cffff0000/luaerror on - /luaerror off|r",
-	LuaErrorOff = "|cffff0000Lua errors off.|r",
-	Profile = "Profile ",
-	ProfileDel = " Deleted: ",
+	LuaErrorOff = "|cffff0000Lua ошибки выключены.|r",
+	Profile = "Профиль ",
+	ProfileDel = " Удалён: ",
 	ProfileInfo = "\n/profile list\n/profile #\n/profile delete #\n\n",
-	ProfileNotFound = "Profile not found",
-	ProfileSelection = "Please type a profile to use (example: /profile Stormreaver-Kkthnx)",
-	SetUIScale = "KkthnxUI is already controlling the Auto UI Scale feature!",
-	SetUIScaleSucc = "Successfully set UI scale to ",
-	UIHelp = "\nKkthnxUI Commands:\n\n'|cff00ff00/install|r' or '|cff00ff00/reset|r' : Install or reset KkthnxUI to default settings.\n'|cff00ff00/config|r' : Display in-game configuration window.\n'|cff00ff00/moveui|r' : Move Frames.\n'|cff00ff00/testui|r' : Test Unit Frames.\n'|cff00ff00/profile|r' : Use KkthnxUI settings (existing profile) from another character.\n'|cff00ff00/killquests|r' : Remove all non completed quests.\n'|cff00ff00/clearcombat|r' : Clear all CombatLog entries.\n'|cff00ff00/setscale|r' : Sets the UI to pixel perfect.\n'|cff00ff00/rd|r' : Disbands your raid group.\n'|cff00ff00/clearchat|r' : Clear everything in your chat window.\n'|cff00ff00/checkquest|r' : Check if you have completed a quest or not.\n",
+	ProfileNotFound = "Профиль не найден",
+	ProfileSelection = "Напишите профиль для использования (пример: /profile Stormreaver-Kkthnx)",
+	SetUIScale = "KkthnxUI уже использует функцию автоматического масштаба!",
+	SetUIScaleSucc = "Масштаб успешно изменён на ",
+	-- РУС Перевести
+	UIHelp = "\nKkthnxUI Команды:\n\n'|cff00ff00/install|r' или '|cff00ff00/reset|r' : Запуск установки или сброс на начальные настройки.\n'|cff00ff00/config|r' : Показать меню настроек.\n'|cff00ff00/moveui|r' : Перемещение элементов интерфейса.\n'|cff00ff00/testui|r' : Режим тестовых панелей.\n'|cff00ff00/profile|r' : Использовать настройки KkthnxUI  (существующий профиль) от другого персонажа.\n'|cff00ff00/killquests|r' : Отменить все незавершённые задания.\n'|cff00ff00/clearcombat|r' : Очистить все записи Журнала Боя.\n'|cff00ff00/setscale|r' : Sets the UI to pixel perfect.\n'|cff00ff00/rd|r' : Распустить рейд.\n'|cff00ff00/clearchat|r' : Очистить окно чата.\n'|cff00ff00/checkquest|r' : Проверить, выполняли ли вы этот квест или нет.\n",
 }
 
 -- ActionBars Localization
 L["Actionbars"] = {
-	All_Binds_Cleared = "All keybindings cleared for",
-	All_Binds_Discarded = "All newly set keybindings were discarded.",
-	All_Binds_Saved = "All keybindings have been saved.",
-	Binding = "Binding",
-	Fix_Actionbars = "There seems to be an issue with your actionbars. Would you like to attempt to fix the issue?",
-	Key = "Key",
-	Keybind_Mode = "Hover, your mouse over any action button, to bind it. Press the escape key or right click to clear the current action button's keybinding.",
-	Locked = "|CFFFF0000Locked|r",
+	All_Binds_Cleared = "Все горячие клавиши сброшены для",
+	All_Binds_Discarded = "Новые назначения горячих клавиш были отменены.",
+	All_Binds_Saved = "Все горячие клавиши были сохранены.",
+	Binding = "Назначение",
+	Fix_Actionbars = "Кажется есть проблема с отображением ваших панелей. Хотите попытаться исправить эту проблему?",
+	Key = "Кнопка",
+	Keybind_Mode = "Наведите мышкой на кнопку и нажмите нужную кнопку на клавиатуре. Для сброса горячей клавиши на выбранной кнопке, нажмите 'Esc' или правой кнопкой мыши.",
+	Locked = "|CFFFF0000Заблокировано|r",
+	-- РУС Перевести
 	No_Bindings_Set = "No Bindings Set",
 	Trigger = "Trigger",
-	Unlocked = "|CFF008000Unlocked|r",
+	Unlocked = "|CFF008000Разблокировано|r",
 }
 
 -- AFKCam Localization
 L["AFKCam"] = {
-	NoGuild = "No Guild",
+	NoGuild = "Без гильдии",
 }
 
 -- AddOnsData Localization
 L["AddOnData"] = {
-	AllAddOnsText = "All supported AddOn profiles loaded, if the AddOn is loaded!",
-	InfoText = "|cffffff00The following commands are supported for AddOn profiles.|r\n\n|cff00ff00/settings dbm|r, to apply the settings |cff00ff00DeadlyBossMods.|r\n|cff00ff00/settings msbt|r, to apply the settings |cff00ff00MikScrollingBattleText.|r\n|cff00ff00/settings skada|r, to apply the settings |cff00ff00Skada.|r\n|cff00ff00/settings bt4 or bartender|r, to apply the settings |cff00ff00Bartender4.|r\n|cff00ff00/settings buggrabber|r, to apply the settings |cff00ff00!BugGrabber.|r\n|cff00ff00/settings bugsack|r, to apply the settings |cff00ff00BugSack.|r\n|cff00ff00/settings bugsack|r, to apply the settings |cff00ff00BugSack.|r\n|cff00ff00/settings pawn|r, to apply the settings |cff00ff00Pawn.|r\n|cff00ff00/settings bigwigs|r, to apply the settings |cff00ff00BigWigs.|r\n|cff00ff00/settings all|r, to apply settings for all supported AddOns, if that AddOn is loaded!\n\n",
-	BigWigsText = "|cffffff00".."BigWigs profile loaded".."|r",
-	BigWigsNotText = "|CFFFF0000AddOn BigWigs is not loaded!|r",
-	BartenderText = "|cffffff00".."Bartender4 profile loaded".."|r",
-	BartenderNotText = "|CFFFF0000AddOn Bartender4 is not loaded!|r",
-	BugGrabberText = "|cffffff00".."BugGrabber profile loaded".."|r",
-	BugGrabberNotText = "|CFFFF0000AddOn !BugGrabber is not loaded!|r",
-	BugSackText = "|cffffff00".."BugSack profile loaded".."|r",
-	BugSackNotText = "|CFFFF0000AddOn BugSack is not loaded!|r",
-	DBMText = "|cffffff00".."DBM profile loaded".."|r",
-	DBMNotText = "|CFFFF0000AddOn DeadlyBossMods is not loaded!|r",
-	MSBTText = "|cffffff00".."MikScrollingBattleText profile loaded".."|r",
-	MSBTNotText = "|CFFFF0000AddOn MikScrollingBattleText is not loaded!|r",
-	PawnText = "|cffffff00".."Pawn profile loaded".."|r",
-	PawnNotText ="|CFFFF0000AddOn Pawn is not loaded!|r",
-	SkadaText = "|cffffff00".."Skada profile loaded".."|r",
-	SkadaNotText = "|CFFFF0000AddOn Skada is not loaded!|r",
+	AllAddOnsText = "Настройки для всех поддерживаемых дополнений загружены!",
+	InfoText = "|cffffff00Используйте эти команды для загрузки профилей к дополнениям.|r\n\n|cff00ff00/settings dbm|r, чтобы применить настройки к |cff00ff00DeadlyBossMods.|r\n|cff00ff00/settings msbt|r, чтобы применить настройки к |cff00ff00MikScrollingBattleText.|r\n|cff00ff00/settings skada|r, чтобы применить настройки к |cff00ff00Skada.|r\n|cff00ff00/settings bt4 или bartender|r, чтобы применить настройки к |cff00ff00Bartender4.|r\n|cff00ff00/settings buggrabber|r, чтобы применить настройки к |cff00ff00!BugGrabber.|r\n|cff00ff00/settings bugsack|r, чтобы применить настройки к |cff00ff00BugSack.|r\n|cff00ff00/settings bugsack|r, чтобы применить настройки к |cff00ff00BugSack.|r\n|cff00ff00/settings pawn|r, чтобы применить настройки к |cff00ff00Pawn.|r\n|cff00ff00/settings bigwigs|r, чтобы применить настройки к |cff00ff00BigWigs.|r\n|cff00ff00/settings all|r, чтобы применить настройки ко всем дополнениям, если они включены!\n\n",
+	BigWigsText = "|cffffff00".."BigWigs профиль загружен".."|r",
+	BigWigsNotText = "|CFFFF0000Дополнение BigWigs не загружено!|r",
+	BartenderText = "|cffffff00".."Bartender4 профиль загружен".."|r",
+	BartenderNotText = "|CFFFF0000Дополнение Bartender4 не загружено!|r",
+	BugGrabberText = "|cffffff00".."BugGrabber профиль загружен".."|r",
+	BugGrabberNotText = "|CFFFF0000Дополнение !BugGrabber не загружено!|r",
+	BugSackText = "|cffffff00".."BugSack профиль загружен".."|r",
+	BugSackNotText = "|CFFFF0000Дополнение BugSack не загружено!|r",
+	DBMText = "|cffffff00".."DBM профиль загружен".."|r",
+	DBMNotText = "|CFFFF0000Дополнение DeadlyBossMods не загружено!|r",
+	MSBTText = "|cffffff00".."MikScrollingBattleText профиль загружен".."|r",
+	MSBTNotText = "|CFFFF0000Дополнение MikScrollingBattleText не загружено!|r",
+	PawnText = "|cffffff00".."Pawn профиль загружен".."|r",
+	PawnNotText ="|CFFFF0000Дополнение Pawn не загружено!|r",
+	SkadaText = "|cffffff00".."Skada профиль загружен".."|r",
+	SkadaNotText = "|CFFFF0000Дополнение Skada не загружено!|r",
 }
 
 -- Announcements Localization
 L["Announcements"] = {
+	-- Считаю что некоторые не стоит переводить
 	Dispelled = "Dispelled",
-	Pull_Aborted = "Pull ABORTED!",
-	Pulling = "Pulling %s in %s..",
+	Pull_Aborted = "Отсчёт ПРЕРВАН!",
+	Pulling = "Отсчёт %s из %s..",
 	Sapped = "Sapped!",
 	Sapped_By = "Sapped by: ",
-	Stole = "Stole",
+	Stole = "Украдено",
 }
 
 -- Auras Localization
@@ -131,17 +136,17 @@ L["Auras"] = {
 
 -- Automation Localization
 L["Automation"] = {
-	DuelCanceled_Pet = "Pet duel request from %s rejected.",
-	DuelCanceled_Regular = "Duel request from %s rejected.",
-	MovieBlocked = "You've seen this movie before, skipping it.",
+	DuelCanceled_Pet = "Запрос на битву питомцев от %s был отклонён.",
+	DuelCanceled_Regular = "Запрос на дуэль от %s был отклонён.",
+	MovieBlocked = "Вы уже видели это кино ранее, пропускаем.",
 }
 
 -- Blizzard Localization
 L["Blizzard"] = {
-	Disband_Group = "Disband Group",
-	Lua_Error_Recieved = "|cFFE30000Lua error recieved. You can view the error message when you exit combat.",
-	No_Errors = "No error yet.",
-	Raid_Menu = "Raid Menu",
+	Disband_Group = "Распустить группу",
+	Lua_Error_Recieved = "|cFFE30000Получена ошибка Lua. Вы сможете посмотреть окно с ошибкой, когда выйдете из боя.",
+	No_Errors = "Без ошибок",
+	Raid_Menu = "Меню Рейда",
 	Taint_Error = "%s: %s tried to call the protected function '%s'.",
 }
 
@@ -149,15 +154,16 @@ L["Blizzard"] = {
 L["Chat"] = {
 	AFK = "",
 	DND = "",
-	Invaild_Target = "Invaild Target",
+	Invaild_Target = "Неверная Цель",
 	-- Channel Names
-	Conversation = "Conversation",
-	General = "General",
+	Conversation = "Общение",
+	General = "Общий",
 	LocalDefense = "LocalDefense",
-	LookingForGroup = "LookingForGroup",
-	Trade = "Trade",
+	LookingForGroup = "Поиск Группы",
+	Trade = "Торговля",
 	WorldDefense = "WorldDefense",
 	-- Short Channel Names
+	-- Считаю что их не стоит переводить
 	S_Conversation = "C",
 	S_General = "G",
 	S_Guild = "g",
@@ -182,33 +188,34 @@ L["Chat"] = {
 
 -- Configbutton Localization
 L["ConfigButton"] = {
-	ActionbarLock = "Actionbar Lock",
-	Changelog = "Changelog",
-	CopyChat = "Copy chat",
-	Emotions = "Emotions",
-	Functions = "Functions",
-	Install = "Install",
-	LeftClick = "Left click:",
-	MiddleClick = "Middle click:",
-	MoveUI = "MoveUI",
-	ProfileList = "Profile list",
-	Right_Click = "Right click:",
-	Roll = "Roll 1-100. You win!",
-	ToggleConfig = "Toggle Config",
-	UIHelp = "UI Help",
+	ActionbarLock = "Заблокировать панели",
+	Changelog = "Список изменений",
+	CopyChat = "Скопировать чат",
+	Emotions = "Смайлики",
+	Functions = "Функции",
+	Install = "Установка",
+	LeftClick = "Левый клик:",
+	MiddleClick = "Клик колесом:",
+	MoveUI = "Перемещать",
+	ProfileList = "Список профилей",
+	Right_Click = "Правый клик:",
+	Roll = "Roll 1-100. Ты победишь!",
+	ToggleConfig = "Окно настроек",
+	UIHelp = "Помощь",
 }
 
 -- Databars Localization
 L["Databars"] = {
 	AP = "AP:",
-	Bars = "Bars",
-	Current_Level = "Current Level:",
-	Experience = "Experience",
-	Honor_Remaining = "Honor Remaining:",
-	Honor_XP = "Honor XP:",
-	Remaining = "Remaining:",
-	Rested = "Rested:",
-	Share = "Share Your Experience",
+	Bars = "Ячеек",
+	Current_Level = "Текущий уровень:",
+	Experience = "Опыт",
+	Honor_Remaining = "Осталось Чести:",
+	Honor_XP = "Очков Чести:",
+	Remaining = "Осталось:",
+	Rested = "Отдых:",
+	Share = "Поделиться свои опытом",
+	-- РУС Перевести
 	Toggle_PvP = "Toggle PvP UI",
 	Toggle_Reputation = "Toggle Reputation UI",
 	XP = "XP:",
@@ -216,88 +223,92 @@ L["Databars"] = {
 
 -- Datatext Localization
 L["DataText"] = {
+	-- Не хожу в ПвП и БГ, не знаю как корректно перевести
 	BaseAssault = "Bases Assaulted:",
 	BaseDefend = "Bases Defended:",
-	CallToArms = "Call to Arms",
+	CallToArms = "Призыв к Оружию",
 	CartControl = "Carts Controlled:",
-	ControlBy = "Controlled by:",
-	Damage = "Damage: ",
-	DamageDone = "Damage Done:",
-	Death = "Deaths:",
+	ControlBy = "Контролируется:",
+	Damage = "Урон: ",
+	DamageDone = "Нанесено урона:",
+	Death = "Смерти:",
 	DemolisherDestroy = "Demolishers Destroyed:",
-	FlagCapture = "Flags Captured:",
-	FlagReturn = "Flags Returned:",
+	FlagCapture = "Флагов Захвачено:",
+	FlagReturn = "Флагов Возвращено:",
 	GateDestroy = "Gates Destroyed:",
 	GraveyardAssault = "Graveyards Assaulted:",
 	GraveyardDefend = "Graveyards Defended:",
-	Healing = "Healing: ",
-	HealingDone = "Healing Done:",
-	Honor = "Honor: ",
+	Healing = "Лечение: ",
+	HealingDone = "Произведено лечения:",
+	Honor = "Честь: ",
 	HonorableKill = "Honorable Kills:",
-	HonorGained = "Honor Gained:",
-	KillingBlow = "Killing Blows: ",
+	HonorGained = "Получено Чести:",
+	KillingBlow = "Смертельные удары: ",
 	OrbPossession = "Orb Possessions:",
 	StatsFor = "Stats for ",
 	TowerAssault = "Towers Assaulted:",
 	TowerDefend = "Towers Defended:",
-	VictoryPts = "Victory Points:",
+	VictoryPts = "Очков Победы:",
 }
 
 -- Inventory Localization
 L["Inventory"] = {
-	Artifact_Count = "Count: ",
-	Artifact_Use = "|cff02FF02|nRight click to use|r",
-	Bank = "Switch to Bank",
+	Artifact_Count = "Количество: ",
+	Artifact_Use = "|cff02FF02|nПравой кнопкой чтобы использовать|r",
+	Bank = "Переключиться в банк",
 	--Buttons_Artifact = "|cff02FF02|nRight click to use Artifact Power item in bag|r",
-	Buttons_Sort = "Left Click: Sort |nRight Click: Blizzard Sort",
+	Buttons_Sort = "Левый клик: Сортировка |nПравый клик: Сортировка как у Blizzard",
+	-- РУС Перевести
 	Buttons_Stack = "Stack Items",
 	Cant_Buy_Slot = "Can't buy anymore slots!",
-	GuildRepair = "Your items have been repaired using guild bank funds for: ",
-	NotatVendor = "You must be at a vendor.",
-	NotEnoughMoney = "You don't have enough money to repair!",
-	Purchase_Slot = "Purchase Bags Slot",
-	Reagents = "Switch to reagents",
-	RepairCost = "Your items have been repaired for: ",
-	Right_Click_Search = "Right-click to search",
-	Shift_Move = "Hold Shift + Drag",
-	Show_Bags = "Toggle Bags",
-	SoldTrash = "Vendored gray items for: ",
-	TrashList = "|n|nTrash List:|n",
-	VendorGrays = "Vendoring Grays",
+	GuildRepair = "Ваши вещи были отремонтированы за счёт гильдии на сумму: ",
+	NotatVendor = "Вы должны быть у торговца.",
+	NotEnoughMoney = "У вас недостаточно денег для ремонта!",
+	Purchase_Slot = "Купить слоты для сумок",
+	Reagents = "Переключиться на реагенты",
+	RepairCost = "Ваши вещи были отремонтированы на сумму: ",
+	Right_Click_Search = "Правый клик для поиска",
+	Shift_Move = "Зажмите Shift и перетаскивайте",
+	Show_Bags = "Показать сумки",
+	SoldTrash = "Продано серых вещей на сумму: ",
+	TrashList = "|n|nСписок мусора:|n",
+	VendorGrays = "Продать серое",
 }
 
 -- Loot Localization
 L["Loot"] = {
-	Empty_Slot = "Empty Slot",
+	Empty_Slot = "Пустой слот",
+	-- Не знаю где это. РУС Перевести
 	Fishy_Loot = "Fishy Loot",
 }
 
 -- Maps Localization
 L["Maps"] = {
-	DisableToHide = "Disable to hide areas|nyou have not yet discovered.",
-	EnableToShow = "Enable to show hidden areas|nyou have not yet discovered.",
-	HideUnDiscovered = "Hide Undiscovered Areas",
-	PressToCopy = "|nPress <CTRL/C> to copy.",
-	Reveal = "Reveal",
-	RevealHidden = "Reveal Hidden Areas",
-	Spotted = "spotted! ",
-	TomTom = "Enable AddOn TomTom for this feature. You can download it from Curse",
+	DisableToHide = "Отключите чтобы скрыть области|nв которых вы ещё не были.",
+	EnableToShow = "Включите чтобы показать все области|nдаже если вы в них ещё не были.",
+	HideUnDiscovered = "Скрыть неисследованные области",
+	PressToCopy = "|nНажмите <CTRL/C> чтобы скопировать.",
+	Reveal = "Убрать туман",
+	RevealHidden = "Показать неисследованные области",
+	Spotted = "обнаружен! ",
+	TomTom = "Включите TomTom для этой функции. Вы можете скачать его с Curse",
 }
 
 -- Miscellaneous Localization
 L["Miscellaneous"] = {
-	Config_Not_Found = "KkthnxUI_Config was not found!",
+	Config_Not_Found = "KkthnxUI_Config не был найден!",
 	Copper_Short = "|cffeda55fc|r",
 	Gold_Short = "|cffffd700g|r",
+	-- РУС Перевести
 	KkthnxUI_Scale_Button = "KkthnxUI Scale Config",
-	Mail_Complete = "All done.",
-	Mail_Messages = "messages",
-	Mail_Need = "Need a mailbox.",
-	Mail_Stopped = "Stopped, inventory is full.",
-	Mail_Unique = "Stopped. Found a duplicate unique item in bag or in bank.",
-	Repair = "Warning! You need to do a repair of your equipment as soon as possible!",
+	Mail_Complete = "Готово.",
+	Mail_Messages = "писем",
+	Mail_Need = "Нужен почтовый ящик.",
+	Mail_Stopped = "Остановлено, нет места в сумках.",
+	Mail_Unique = "Остановлено. Обнаружена копия этого уникального предмета в сумках или в банке.",
+	Repair = "Внимание! Вам необходимо починить свою экипировку как можно скорее!",
 	Silver_Short = "|cffc7c7cfs|r",
-	UIOutdated = "Your version of KkthnxUI is out of date. You can download the newest version from Curse.com. Get the Curse app and have KkthnxUI automatically updated with the Client!",
+	UIOutdated = "Версия KkthnxUI устаревшая. Вы можете загрузить более новую версию на Curse.com. Установите приложение Curse и пусть KkthnxUI автоматически обновляется в этом приложении!",
 }
 
 -- Nameplates Localization
@@ -317,14 +328,14 @@ L["Quests"] = {
 
 -- Skins Localization
 L["Skins"] = {
-	Skada_Reset = "Do you want to reset Skada?",
+	Skada_Reset = "Вы хотите сбросить Skada?",
 }
 
 -- Tooltip Localization
 L["Tooltip"] = {
-	Bank = "Bank",
+	Bank = "Банк",
 	Companion_Pets = GetItemSubClassInfo(LE_ITEM_CLASS_MISCELLANEOUS, 2),
-	Count = "Count",
+	Count = "Количество",
 	Item_Enhancement = GetItemClassInfo(LE_ITEM_CLASS_ITEM_ENHANCEMENT),
 	Other = GetItemSubClassInfo(LE_ITEM_CLASS_MISCELLANEOUS, 4),
 	Quest = GetItemClassInfo(LE_ITEM_CLASS_QUESTITEM),
@@ -333,15 +344,15 @@ L["Tooltip"] = {
 
 -- UnitFrames Localization
 L["Unitframes"] = {
-	Dead = "Dead",
-	Ghost = "Ghost",
+	Dead = "Мёртв",
+	Ghost = "Призрак",
 }
 
 -- Config Localization
 L["Config"] = {
-	CharSettings = "Use Character Settings",
-	ConfigNotFound = "Config not found!",
-	GlobalSettings = "Use Global Settings",
-	ResetCVars = "Reset CVars",
-	ResetChat = "Reset Chat",
+	CharSettings = "Исп. на персонажа",
+	ConfigNotFound = "Настройки не найдены!",
+	GlobalSettings = "Исп. Глобально",
+	ResetCVars = "Сброс CVars",
+	ResetChat = "Сброс чата",
 }
