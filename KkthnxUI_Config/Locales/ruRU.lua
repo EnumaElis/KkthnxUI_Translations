@@ -2,7 +2,7 @@ if (GetLocale() ~= "ruRU") then
 	return
 end
 
-local MissingDesc = "The description for this module/setting is missing. Someone should really remind Kkthnx to do his job!"
+local MissingDesc = "Описание этого модуля/настройки отсутствует. Кто-то должен напомнить Kkthnx делать лучше свою работу!"
 local ModuleNewFeature = [[|TInterface\OptionsFrame\UI-OptionsFrame-NewFeatureIcon:0:0:0:0|t]] -- Used for newly implemented features.
 local PerformanceIncrease = "|n|nОтключение этой функции может немного повысить производительность|r" -- For semi-high CPU options
 local RestoreDefault = "|n|nЩелкните правой кнопкой чтобы вернуть настройку по-умолчанию" -- For color pickers
@@ -14,14 +14,11 @@ local AURAS = _G.AURAS
 local BATTLEGROUNDS = _G.BATTLEGROUNDS
 local BINDING_HEADER_ACTIONBAR = _G.BINDING_HEADER_ACTIONBAR
 local BINDING_NAME_TOGGLEGARRISONLANDINGPAGE = _G.BINDING_NAME_TOGGLEGARRISONLANDINGPAGE
-local BOSS = _G.BOSS
-local CHAT = _G.CHAT
 local COMBAT = _G.COMBAT
 local DUNGEONS = _G.DUNGEONS
 local GARRISON_LANDING_PAGE_TITLE = _G.GARRISON_LANDING_PAGE_TITLE
 local GARRISON_LOCATION_TOOLTIP = _G.GARRISON_LOCATION_TOOLTIP
 local GENERAL = _G.GENERAL
-local INVENTORY_TOOLTIP = _G.INVENTORY_TOOLTIP
 local LOOT = _G.LOOT
 local MINIMAP_LABEL = _G.MINIMAP_LABEL
 local MISCELLANEOUS = _G.MISCELLANEOUS
@@ -125,11 +122,6 @@ KkthnxUIConfig["ruRU"] = {
 		["MoveBlizzardFrames"] = {
 			["Name"] = "Двигать окна Blizzard",
 		},
-		-- РУС Перевести
-		["TaintLog"] = {
-			["Name"] = "Log Taints",
-			["Desc"] = "Send ADDON_ACTION_BLOCKED errors to the Lua Error frame. These errors are less important in most cases and will not effect your game performance. Also, a lot of these errors cannot be fixed. Please only report these errors if you notice a Defect in gameplay.",
-		},
 
 		["ReplaceBlizzardFonts"] = {
 			["Name"] = "Заменить стандартные шрифты",
@@ -222,13 +214,13 @@ KkthnxUIConfig["ruRU"] = {
 	-- Bags Local
 	["Inventory"] = {
 		["BagColumns"] = {
-			["Name"] = "Колонки в сумке",
-			["Desc"] = "Количество колонок в сумке",
+			["Name"] = "Столбцов в сумке",
+			["Desc"] = "Количество столбцов в сумке",
 		},
 
 		["BankColumns"] = {
-			["Name"] = "Колонки в банке",
-			["Desc"] = "Количество колонок в банке",
+			["Name"] = "Столбцов в банке",
+			["Desc"] = "Количество столбцов в банке",
 		},
 
 		["ButtonSize"] = {
@@ -246,16 +238,6 @@ KkthnxUIConfig["ruRU"] = {
 
 		["Enable"] = {
 			["Name"] = "Включить сумки",
-		},
-
-		["BagBar"] = {
-			["Name"] = "Панель сумок",
-			["Desc"] = "Включить панель сумок",
-		},
-
-		["BagBarMouseover"] = {
-			["Name"] = "Скрывать панель сумок",
-			["Desc"] = "Панель сумок будет скрыта, пока вы не наведете на неё мышкой",
 		},
 
 		["Font"] = {
@@ -404,11 +386,6 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Скрывать панель стоек",
 			["Desc"] = "Показывать панель стоек при наведении мышки. Работает только при горизонтальной панели стоек",
 		},
-		-- РУС Перевести
-		["HideHighlight"] = {
-			["Name"] = "Proc Highlight",
-			["Desc"] = "Hide proc highlight",
-		},
 
 		["Hotkey"] = {
 			["Name"] = "Горячие клавиши",
@@ -512,11 +489,6 @@ KkthnxUIConfig["ruRU"] = {
 			["Desc"] = "Показывать иконку классов в PvP",
 		},
 		-- РУС Перевести
-		["TankedByTankColor"] = {
-			["Name"] = "Tanked Color",
-			["Desc"] = "Use Tanked Color when a nameplate is being effectively tanked by another tank.",
-		},
-		-- РУС Перевести
 		["BadTransition"] = {
 			["Name"] = "Bad Transition",
 			["Desc"] = "Bad Transition Color"..RestoreDefault,
@@ -610,10 +582,10 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Good Color",
 			["Desc"] = "Good threat color, varies depending if your a tank or dps/heal"..RestoreDefault,
 		},
-		-- РУС Перевести
+
 		["MarkHealers"] = {
 			["Name"] = "Отметить лекарей",
-			["Desc"] = "Show healer icon beside enemy healers nameplate in battlegrounds",
+			["Desc"] = "Показывать иконку вражеских Лекарей над индикаторами на БГ (Поля Боя)",
 		},
 
 		["HealthValue"] = {
@@ -634,15 +606,15 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Off Tank Color",
 			["Desc"] = "Offtank threat color"..RestoreDefault,
 		},
-		-- РУС Перевести
+
 		["Smooth"] = {
-			["Name"] = "Smooth",
-			["Desc"] = "Bars will transition smoothly."..PerformanceIncrease,
+			["Name"] = "Плавные полосы",
+			["Desc"] = "Плавное заполнение полос."..PerformanceIncrease,
 		},
-		-- РУС Перевести
+
 		["SmoothSpeed"] = {
-			["Name"] = "Smooth Speed",
-			["Desc"] = "How fast the bars will transition smoothly.",
+			["Name"] = "Плавно: скорость",
+			["Desc"] = "Как быстро полосы будут плавно заполняться.",
 		},
 
 		["SelectedScale"] = {
@@ -683,25 +655,14 @@ KkthnxUIConfig["ruRU"] = {
 		["Interrupt"] = {
 			["Name"] = "Сбитие каста",
 			["Desc"] = "Написать в выбранный канал о сбитии каста",
-		},
-
-		["Dispel"] = {
-			["Name"] = "Рассеивание",
-			["Desc"] = "Написать в выбранный канал о рассеивании заклинания",
-		},
-
-		["Steal"] = {
-			["Name"] = "Кража",
-			["Desc"] = "Написать в выбранный канал о то что вы совершили кражу",
 		},		
 	},
 
 	-- Automation Local
-	-- РУС Перевести
 	["Automation"] = {
 		["BlockMovies"] = {
-			["Name"] = "Block Movies",
-			["Desc"] = "Boss encounter movies will only be allowed to play once (so you can watch each one) and will then be blocked."
+			["Name"] = "Блокировать видеоролики",
+			["Desc"] = "Вступительные видеоролики к некоторым боссам вам покажут только один раз (т.е. вы их все сможете посмотреть), в дальнейшем этот ролик будет блокироваться."
 		},
 
 		["AutoCollapse"] = {
@@ -723,10 +684,10 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Автозадания",
 			["Desc"] = "Автоматически принимает новые и сдаёт выполненные задания, ускоряя процесс набора опыта..",
 		},  
-		-- РУС Перевести
+
 		["InviteKeyword"] = {
-			["Name"] = "Invite Keyword",
-			["Desc"] = "Automatically accept invites from from anyone who whispers you the invite keyword",
+			["Name"] = "Слово для приглашения",
+			["Desc"] = "Автоматически принимать приглашения от любого игрока, если он напишет в приват специальное слово",
 		},
 
 		["AutoRelease"] = {
@@ -738,10 +699,10 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Воскрешения",
 			["Desc"] = "Автоматически принимать предложения воскресить вас",
 		},
-		-- РУС Перевести
+
 		["AutoResurrectCombat"] = {
-			["Name"] = "Auto Resurrect Combat",
-			["Desc"] = "Automatically accepts your resurrection request in combat",
+			["Name"] = "Воскрешения в бою",
+			["Desc"] = "Автоматически принимать предложения воскресить вас во время боя",
 		},
 
 		["AutoResurrectThank"] = {
@@ -771,9 +732,9 @@ KkthnxUIConfig["ruRU"] = {
 		["Garrison"] = {
 			["Name"] = GARRISON_LOCATION_TOOLTIP,
 		},
-		-- РУС Перевести
+
 		["Orderhall"] = {
-			["Name"] = "Class Hall",
+			["Name"] = "Оплот Класса",
 		},
 
 		["Battleground"] = {
@@ -820,10 +781,10 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Количество строк",
 			["Desc"] = "Максимальное количество строк для аур",
 		},
-		-- РУС Перевести
+
 		["SeperateOwn"] = {
-			["Name"] = "Seperate Own",
-			["Desc"] = "Indicate whether buffs you cast yourself should be separated before or after.",
+			["Name"] = "Отделить личные",
+			["Desc"] = "Ваши собственные бафы, которые вы накладываете сами на себя, будут отделены от остальных бафов.",
 		},
 
 		["Size"] = {
@@ -838,9 +799,9 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Аур на строку",
 			["Desc"] = "Количество аур на одну строку",
 		},
-		-- РУС Перевести
+
 		["FadeThreshold"] = {
-			["Name"] = "Fade Threshold",
+			["Name"] = "Порог затухания",
 		},
 
 		["GrowthDirection"] = {
@@ -884,20 +845,20 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Звук привата",
 			["Desc"] = "Проигрывать звук, когда вам пишут в приват",
 		},
-		-- РУС Перевести
+
 		["VoiceOverlay"] = {
-			["Name"] = "Voice Chat Overlay",
-			["Desc"] = "Replace Blizzard's Voice Overlay.",
+			["Name"] = "Голосовой чат",
+			["Desc"] = "Заменить наложение Голосового Чата Blizzard.",
 		},
 
 		["FadingTimeFading"] = {
 			["Name"] = "Скорость затухания",
 			["Desc"] = "Настройка скорости затухания чата",
 		},
-		-- РУС Перевести
+
 		["FadingTimeVisible"] = {
 			["Name"] = "Видимость перед затуханием",
-			["Desc"] = "Chat Visible Before Fade",
+			["Desc"] = "Длительность видимости чата перед затуханием",
 		},
 
 		["ShortenChannelNames"] = {
@@ -1161,10 +1122,10 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "PVP Emote",
 			["Desc"] = "Make a silly emote at the player you just killed (Kkthnx spits on you!)",
 		},
-		-- РУС Перевести
+
 		["ProfessionTabs"] = {
-			["Name"] = "Enhanced Profession Tabs",
-			["Desc"] = "Makes it easier to get to your professions and keep them orderly",
+			["Name"] = "Вкладки окна профессий",
+			["Desc"] = "Добавляет к окну профессий вкладки всех доступных профессий",
 		},
 
 		["SlotDurability"] = {
@@ -1205,9 +1166,9 @@ KkthnxUIConfig["ruRU"] = {
 		["BuffSize"] = {
 			["Name"] = "Размер баффов",
 		},
-		-- РУС перевести
+
 		["CooldownSize"] = {
-			["Name"] = "Cooldown Size",
+			["Name"] = "Размер откатов",
 		},
 
 		["PvPSize"] = {
@@ -1281,18 +1242,18 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Включить полосы заклинаний",
 			["Desc"] = "Показывает полосу заклинаний у рамок",
 		},
-		-- РУС перевести
+
 		["CastbarTicks"] = {
-			["Name"] = "Show Castbar Ticks",
-			["Desc"] = "Display tick marks on the castbar for channelled spells. This will adjust automatically for spells like Drain Soul and add additional ticks based on haste.",
+			["Name"] = "Тики на полосе заклинаний",
+			["Desc"] = "Показывать на полосе заклинаний метки тиков для потоковых заклинаний. Настраивается автоматически для заклинаний по типу Похищения Души и добавляются дополнительные метки тиков в зависимости от вашей Скорости.",
 		},
 
 		["CastbarWidth"] = {
 			["Name"] = "Ширина полосы заклинаний",
 		},
-		-- РУС перевести
+
 		["CastbarTicksWidth"] = {
-			["Name"] = "Castbar Ticks Width",
+			["Name"] = "Ширина Тиков на полосе",
 		},
 		-- РУС перевести
 		["CastClassColor"] = {
@@ -1332,15 +1293,15 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Power Prediction Bar",
 			["Desc"] = "Display a bar at which determines how much a spell will cost of power?",
 		},
-		-- РУС Перевести
+
 		["Smooth"] = {
-			["Name"] = "Smooth Bars",
-			["Desc"] = "Bars will transition smoothly."..PerformanceIncrease,
+			["Name"] = "Плавные полосы",
+			["Desc"] = "Плавное заполнение полос."..PerformanceIncrease,
 		},
-		-- РУС Перевести
+
 		["SmoothSpeed"] = {
-			["Name"] = "Smooth Speed",
-			["Desc"] = "How fast the bars will transition smoothly.",
+			["Name"] = "Плавно: скорость",
+			["Desc"] = "Как быстро полосы будут плавно заполняться.",
 		},
 
 		["Texture"] = {
@@ -1386,15 +1347,15 @@ KkthnxUIConfig["ruRU"] = {
 		["Font"] = {
 			["Name"] = "Шрифт",
 		},
-		-- РУС Перевести
+
 		["Smooth"] = {
-			["Name"] = "Smooth Bars",
-			["Desc"] = "Bars will transition smoothly."..PerformanceIncrease,
+			["Name"] = "Плавные полосы",
+			["Desc"] = "Плавное заполнение полос."..PerformanceIncrease,
 		},
-		-- РУС Перевести
+
 		["SmoothSpeed"] = {
-			["Name"] = "Smooth Speed",
-			["Desc"] = "How fast the bars will transition smoothly.",
+			["Name"] = "Плавно: скорость",
+			["Desc"] = "Как быстро полосы будут плавно заполняться.",
 		},
 
 		["Texture"] = {
@@ -1438,15 +1399,15 @@ KkthnxUIConfig["ruRU"] = {
 		["Font"] = {
 			["Name"] = "Шрифт",
 		},
-		-- РУС Перевести
+
 		["Smooth"] = {
-			["Name"] = "Smooth Bars",
-			["Desc"] = "Bars will transition smoothly."..PerformanceIncrease,
+			["Name"] = "Плавные полосы",
+			["Desc"] = "Плавное заполнение полос."..PerformanceIncrease,
 		},
-		-- РУС Перевести
+
 		["SmoothSpeed"] = {
-			["Name"] = "Smooth Speed",
-			["Desc"] = "How fast the bars will transition smoothly.",
+			["Name"] = "Плавно: скорость",
+			["Desc"] = "Как быстро полосы будут плавно заполняться.",
 		},
 
 		["Texture"] = {
@@ -1517,15 +1478,15 @@ KkthnxUIConfig["ruRU"] = {
 		["Font"] = {
 			["Name"] = "Шрифт",
 		},
-		-- РУС перевести
+
 		["Smooth"] = {
-			["Name"] = "Smooth Bars",
-			["Desc"] = "Bars will transition smoothly." .. PerformanceIncrease,
+			["Name"] = "Плавные полосы",
+			["Desc"] = "Плавное заполнение полос."..PerformanceIncrease,
 		},
-		-- РУС перевести
+
 		["SmoothSpeed"] = {
-			["Name"] = "Smooth Speed",
-			["Desc"] = "How fast the bars will transition smoothly.",
+			["Name"] = "Плавно: скорость",
+			["Desc"] = "Как быстро полосы будут плавно заполняться.",
 		},
 
 		["TargetHighlight"] = {
@@ -1588,10 +1549,10 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = "Deficit Threshold",
 			["Desc"] = "Show health deficit when it's more than displayed value",
 		},
-		-- РУС Перевести
+
 		["ColorHealthByValue"] = {
-			["Name"] = "Health By Value",
-			["Desc"] = "Color health by amount remaining.",
+			["Name"] = "ХП по значению",
+			["Desc"] = "Окрашивать полосу ХП в зависимости от его количества.",
 		},
 
 		["Enable"] = {
@@ -1610,10 +1571,10 @@ KkthnxUIConfig["ruRU"] = {
 		["Width"] = {
 			["Name"] = "Ширина рейда",
 		},
-		-- РУС Перевести
+
 		["MainTankFrames"] = {
-			["Name"] = "Main Tank Frames",
-			["Desc"] = "You know the people who take all the damage?",
+			["Name"] = "Рамки Танков",
+			["Desc"] = "Вы будете лучше видеть тех, кто получает по щщам!",
 		},
 		-- РУС Перевести
 		["ManabarShow"] = {
@@ -1622,7 +1583,7 @@ KkthnxUIConfig["ruRU"] = {
 		},
 		-- РУС Перевести
 		["MaxUnitPerColumn"] = {
-			["Name"] = "Max Unit Per Column",
+			["Name"] = "Количество на столбец",
 			["Desc"] = "How many frame will display per row/column",
 		},
 		-- РУС Перевести
@@ -1630,30 +1591,30 @@ KkthnxUIConfig["ruRU"] = {
 			["Name"] = RAID_CONTROL,
 			["Desc"] = "Enables the custom Raid Control panel.",
 		},
-		-- РУС Перевести
+
 		["ShowMouseoverHighlight"] = {
-			["Name"] = "Show Mouseover Highlight",
-			["Desc"] = "We can see better!",
+			["Name"] = "Подсветка при наведении мышкой",
+			["Desc"] = "Так лучше видно!",
 		},
-		-- РУС Перевести
+
 		["ShowNotHereTimer"] = {
 			["Name"] = "Отошёл (AFK)",
-			["Desc"] = "Display when someone is AFK in your raid",
+			["Desc"] = "Показать, когда кто-то AFK в вашем рейде",
 		},
 
 		["ShowRolePrefix"] = {
 			["Name"] = "Показывать роль",
 			["Desc"] = "Показывать 'H' для лекарей и 'T' для танков",
 		},
-		-- РУС Перевести
+
 		["Smooth"] = {
-			["Name"] = "Smooth",
-			["Desc"] = "Bars will transition smoothly."..PerformanceIncrease,
+			["Name"] = "Плавные полосы",
+			["Desc"] = "Плавное заполнение полос."..PerformanceIncrease,
 		},
-		-- РУС Перевести
+
 		["SmoothSpeed"] = {
-			["Name"] = "Smooth Speed",
-			["Desc"] = "How fast the bars will transition smoothly.",
+			["Name"] = "Плавно: скорость",
+			["Desc"] = "Как быстро полосы будут плавно заполняться.",
 		},
 
 		["Texture"] = {
@@ -1734,10 +1695,10 @@ KkthnxUIConfig["ruRU"] = {
 		["CursorAnchorY"] = {
 			["Name"] = "Возле курсора, отступ на Y",
 		},
-		-- РУС Перевести
+
 		["GuildRanks"] = {
-			["Name"] = "Guild Ranks",
-			["Desc"] = "Display players guild ranks",
+			["Name"] = "Ранги в гильдии",
+			["Desc"] = "Показывать у игроков ранги в их гильдии",
 		},
 
 		["HealthbarHeight"] = {
