@@ -123,7 +123,7 @@ L["Announcements"] = {
 	-- Считаю что некоторые не стоит переводить
 	Dispelled = "Dispelled",
 	Pull_Aborted = "Отсчёт ПРЕРВАН!",
-	Pulling = "Отсчёт %s из %s..",
+	Pulling = "Отсчёт до %s..", -- "Отсчёт %s из %s..", doesnt work
 	Sapped = "Sapped!",
 	Sapped_By = "Sapped by: ",
 	Stole = "Украдено",
